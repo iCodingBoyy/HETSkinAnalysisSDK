@@ -1,0 +1,2 @@
+SDK下载地址：https://github.com/myz1104/HETSkinAnalysisSDK.git
+demo下载地址：https://github.com/myz1104/HETSkinAnalysisDemo.git

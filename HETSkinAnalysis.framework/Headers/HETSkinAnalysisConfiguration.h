@@ -49,6 +49,59 @@ typedef NSString* (^HETModelToJSONBlock)(Class aClass, id aModel);
 @property (nonatomic, copy) HETModelToJSONBlock modelToJSONBlock;
 
 /**
+ 是否进行人脸边界检测，默认为YES
+ 
+ @warning 如果设置为NO则不进行人脸侦测边界检测，`setFaceDetectionBounds:`设置无效
+ */
+@property (nonatomic, assign) BOOL faceBoundsDetectionEnable;
+
+/**
+ 是否开启光线检测，默认为YES
+ 
+ @warning 设置为NO将无法获取照片光亮度数据
+ */
+@property (nonatomic, assign) BOOL yuvLightDetectionEnable;
+
+/**
+ 人脸距离侦测，默认为YES
+ 
+ @warning 设置为NO将关闭距离侦测，切无法返回正确的人脸与相机的相对距离参数
+ */
+@property (nonatomic, assign) BOOL distanceDetectionEnable;
+
+/**
+ 标准人脸姿势检查，默认为YES
+ 
+ @warning 正常情况下会对人脸角度识别，确保拍摄到正面人脸，
+ 如果为NO，可能拍摄到非标准人脸影响肤质检测
+ */
+@property (nonatomic, assign) BOOL standardFaceCheckEnable;
+
+
+/**
+ 最大侦测距离 默认.85 (0~1.0) <720x666>
+ */
+@property (nonatomic, assign) CGFloat maxDetectionDistance;
+
+/**
+ 最小侦测距离 默认0.65 (0~1.0) <720x405>
+ */
+@property (nonatomic, assign) CGFloat minDetectionDistance;
+
+/**
+ 最大检测亮度 默认220
+ */
+@property (nonatomic, assign) NSInteger maxYUVLight;
+
+/**
+ 最小检测亮度 默认80
+ */
+@property (nonatomic, assign) NSInteger minYUVLight;
+
+
+#pragma mark - register
+
+/**
  设置clife平台AppId和AppSecret
 
  @warning 你可以从Clife开发平台注册应用获取，如果不设置将无法进行人脸大数据肤质分析
@@ -56,6 +109,7 @@ typedef NSString* (^HETModelToJSONBlock)(Class aClass, id aModel);
  @param appSecret 访问凭证
  */
 - (void)registerWithAppId:(NSString*)appId andSecret:(NSString*)appSecret;
+
 
 
 #pragma mark - 静音设置

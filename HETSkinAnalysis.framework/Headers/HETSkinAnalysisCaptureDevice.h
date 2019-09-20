@@ -72,7 +72,7 @@ typedef void(^HETCaptureSampleBufferOutputBlock)(AVCaptureOutput *output, CMSamp
  异步捕获静态图像
  
  @warning 当视频帧检测处于可用状态，则调用此接口拍摄静态照片用于大数据肤质分析
- @param autoFixImage 自动修正图像，YES 将会对拍摄的图像进行大小和方向修正，已适应大数据分析
+ @param autoFixImage 自动修正图像，YES 将会对拍摄的图像进行大小和方向修正，以适应大数据分析
  @param retHandler 图像输出block
  */
 - (void)captureStillImageAsynchronously:(BOOL)autoFixImage result:(void(^)(UIImage *image, NSError *error))retHandler;

@@ -14,6 +14,7 @@
 @protocol HETSkinAnalysisVoiceDelegate <NSObject>
 @required
 
+#pragma mark - 请平视前置摄像头
 /**
  请平视前置摄像头
  
@@ -23,6 +24,7 @@
 
 - (NSString*)getFrontCameraTakePhotoPromptVoiceText;
 
+#pragma mark - 请平视后置摄像头
 /**
  请平视后置摄像头
  
@@ -32,6 +34,7 @@
 
 - (NSString*)getRearCameraTakePhotoPromptVoiceText;
 
+#pragma mark - 请将脸部对准示意框
 /**
  请将脸部对准示意框 
 
@@ -41,6 +44,7 @@
 - (NSString*)getKeepFaceInCenterFrameVoice;
 - (NSString*)getKeepFaceInCenterFrameVoiceText;
 
+#pragma mark - 即将拍照
 /**
  即将拍照
 
@@ -49,6 +53,7 @@
 - (NSString*)getWillTakePhotoVoice;
 - (NSString*)getWillTakePhotoVoiceText;
 
+#pragma mark - 请保持正脸
 /**
  请保持正脸
  
@@ -57,6 +62,7 @@
 - (NSString*)getKeepStandardFaceVoice;
 - (NSString*)getKeepStandardFaceVoiceText;
 
+#pragma mark - 有人抢镜
 /**
  有人抢镜
  
@@ -65,6 +71,7 @@
 - (NSString*)getMultipleFaceVoice;
 - (NSString*)getMultipleFaceVoiceText;
 
+#pragma mark - 未检测到人脸
 /**
  未检测到人脸
  
@@ -73,6 +80,7 @@
 - (NSString*)getNoFaceDetectedVoice;
 - (NSString*)getNoFaceDetectedVoiceText;
 
+#pragma mark - 拍照快门音效
 /**
  拍照快门音效
  
@@ -80,7 +88,7 @@
  */
 - (NSString*)getPhotoShutterVoice;
 
-
+#pragma mark - 光线不足
 /**
  光线不足
  
@@ -89,6 +97,7 @@
 - (NSString*)getLightDimVoice;
 - (NSString*)getLightDimVoiceText;
 
+#pragma mark - 光线偏亮
 /**
  光线偏亮
  
@@ -97,6 +106,7 @@
 - (NSString*)getLightBrightVoice;
 - (NSString*)getLightBrightVoiceText;
 
+#pragma mark - 远一点
 /**
  远一点
 
@@ -105,6 +115,7 @@
 - (NSString*)getDistanceNearVoice;
 - (NSString*)getDistanceNearVoiceText;
 
+#pragma mark - 近一点
 /**
  近一点
 
@@ -113,6 +124,7 @@
 - (NSString*)getDistanceFarVoice;
 - (NSString*)getDistanceFarVoiceText;
 
+#pragma mark - 拍照成功
 /**
  拍照成功
 

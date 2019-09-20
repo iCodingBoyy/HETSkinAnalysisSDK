@@ -28,3 +28,6 @@ FOUNDATION_EXPORT const unsigned char HETSkinAnalysisVersionString[];
 #import <HETSkinAnalysis/HETSkinAnalysisResult.h>
 #import <HETSkinAnalysis/HETFaceEngineDelegate.h>
 #import <HETSkinAnalysis/HETCaptureDeviceConfig.h>
+
+#import <HETSkinAnalysis/NSString+HETSkinAnalysis.h>
+

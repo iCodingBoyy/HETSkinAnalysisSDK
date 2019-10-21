@@ -65,7 +65,7 @@ typedef void(^HETCaptureSampleBufferOutputBlock)(AVCaptureOutput *output, CMSamp
 
  @return AVCaptureDevicePosition 切换后的摄像头方向
  */
-- (AVCaptureDevicePosition)swicthCamera;
+- (AVCaptureDevicePosition)switchCamera;
 
 
 /**
@@ -75,6 +75,7 @@ typedef void(^HETCaptureSampleBufferOutputBlock)(AVCaptureOutput *output, CMSamp
  @param autoFixImage 自动修正图像，YES 将会对拍摄的图像进行大小和方向修正，以适应大数据分析
  @param retHandler 图像输出block
  */
-- (void)captureStillImageAsynchronously:(BOOL)autoFixImage result:(void(^)(UIImage *image, NSError *error))retHandler;
+- (void)captureStillImageAsynchronously:(BOOL)autoFixImage
+                                 result:(void(^)(UIImage *image, NSError *error))retHandler;
 @end
 

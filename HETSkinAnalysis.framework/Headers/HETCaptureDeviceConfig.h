@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 @protocol HETCaptureDeviceConfigDelegate <NSObject>
+@required
 - (NSDictionary*)getVideoSettings;
 - (AVCaptureSessionPreset)getCaptureSessionPreset;
 @end

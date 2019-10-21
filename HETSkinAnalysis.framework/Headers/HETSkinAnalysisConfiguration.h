@@ -98,6 +98,18 @@ typedef NSString* (^HETModelToJSONBlock)(Class aClass, id aModel);
  */
 @property (nonatomic, assign) NSInteger minYUVLight;
 
+/**
+ 标准人脸检测状态的最小稳定帧，只有图像达到稳定状态才可以启动照片拍摄，默认50
+ 
+ @warning 为防止拍照过程中突然抖动造成图像质量下降，SDK会进行稳定帧检查，你可以根据需要修改此参数，但不宜过大
+*/
+@property (nonatomic, assign) BOOL minStableFrameCountOfStandardFaceState;
+
+/**
+ 是否在`拍照成功语音`播报完成后输出图像 默认为NO,设置为YES，语音播放完成后才回调图像
+*/
+@property (nonatomic, assign) BOOL outputImageAfterVoice;
+
 
 #pragma mark - register
 

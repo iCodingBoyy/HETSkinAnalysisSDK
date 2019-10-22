@@ -1,0 +1,6 @@
+framework module HETSkinAnalysis {
+  umbrella header "HETSkinAnalysis.h"
+
+  export *
+  module * { export * }
+}

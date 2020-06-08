@@ -1262,6 +1262,11 @@ public class SkinAnalysisResult {
 		<td>人脸姿态检测错误</td>
 		<td>请重试</td>
 	</tr>
+        <tr>
+		<td>107003091</td>
+		<td>算法服务请求超时</td>
+		<td>请重试</td>
+	</tr>
 	<tr>
 		<td>107004000</td>
 		<td>授权超时</td>

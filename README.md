@@ -918,19 +918,27 @@ _dataEngine = [[HETSkinAnalysisDataEngine alloc]init];
 	    "wrinkles": [
 	      {
 	        "wrinkleTypeId": 1,
-	        "level": 2
+	        "level": 2,
+		"left": 1,
+		"right": 1
 	      },
 	      {
 	        "wrinkleTypeId": 2,
-	        "level": 2
+	        "level": 2,
+		"left": 1,
+		"right": 1
 	      },
 	      {
 	        "wrinkleTypeId": 4,
-	        "level": 1
+	        "level": 1,
+		"left": 1,
+		"right": 1,
 	      },
 	      {
 	        "wrinkleTypeId": 3,
-	        "level": 3
+	        "level": 3,
+		"left": 1,
+		"right": 1
 	      }
 	    ],
 	    "pigmentationLayer": "http://skintest.hetyj.com//test//b2c3689fc6758dda1071168fbf6531ed",
